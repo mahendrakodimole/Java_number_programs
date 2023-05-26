@@ -7,13 +7,12 @@ example : 153
           1634
     */ 
 public static void main(String []args){
-    int givenNumber=1635;
+    int givenNumber=1634;
     int sum=sumCubesOfDigits(givenNumber,countDigits(givenNumber));
     System.out.println(sum==givenNumber?givenNumber+" is an ArmStrong Number":givenNumber+" is not an ArmStrong Number");
     }
     public static int countDigits(int n){
         int digits=0;
-        int sum=0;
         while (n>0){
             n/=10;
             digits++;
