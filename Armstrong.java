@@ -33,8 +33,4 @@ public static int sumCubesOfDigits(int input,int digits){
     }
     return sum;
 }
-@Override
-public String toString() {
-    return "Armstrong []";
-}
 }
