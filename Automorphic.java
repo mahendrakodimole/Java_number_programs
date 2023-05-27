@@ -6,7 +6,9 @@ public class Automorphic {
     
     public static void main(String []args){
         int input=5;//5,6,76,376
-     System.out.println(lastValue(square(input),digits(input))==input?input+" is an Automorphic number":input+" is not an Automorphic number");
+     System.out.println(lastValue(square(input),digits(input))==input?
+     input+" is an Automorphic number":
+     input+" is not an Automorphic number");
     }
     
     public static int square(int n){
