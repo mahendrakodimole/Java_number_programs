@@ -5,7 +5,7 @@ Some other automorphic numbers are 5, 6, 36, 890625, etc. */
 public class Automorphic {
     
     public static void main(String []args){
-        int input=5;//5,6,76,376
+        int input=376;//5,6,76,376
      System.out.println(lastValue(square(input),digits(input))==input?
      input+" is an Automorphic number":
      input+" is not an Automorphic number");
@@ -22,7 +22,8 @@ public class Automorphic {
             divider*=10;
         }
         int lastValue=square%divider;
-        System.out.println("last value: "+lastValue);
+        System.out.println("input is "+count+" digit value so comparing last "
+                            +count+" Digits value of squared input i.e, "+lastValue);
         return lastValue;
     }
 
@@ -32,7 +33,6 @@ public class Automorphic {
             n/=10;
             count++;
         }
-        System.out.println("Digits:"+count);
         return count;
     }
 }
