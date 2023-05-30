@@ -1,13 +1,12 @@
 public class CircularPrimeNumber {
     public static void main(String[] args) {
-       int input =197;
+       int input =1977;
        String result=isCircularPrime(input);
        System.out.println(input+" "+result);
     }
     static String isCircularPrime(int n){
-        int primeCount=0;
+        int primeCount=0,digits=0;
         int input0 =n;
-        int digits=0;
         int multiplier=1;
         while(input0>0){
             digits++;
@@ -16,14 +15,13 @@ public class CircularPrimeNumber {
         for(int i=1;i<digits;i++){
             multiplier*=10;
         }
-    
+
         int input1 =n;
         while(n>0){
             input1=(input1%10*multiplier)+(input1/10);
            primeCount+= isPrime(input1);
             n/=10;
         }
-        //System.out.println("Prime count:"+primeCount+" digits"+digits);
         return primeCount==digits?"is a Circular Prime number":"is not a Circular prime number";
     }
     static int isPrime(int n){
