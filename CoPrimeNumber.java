@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/*In number theory, two integers a and b are coprime, relatively prime or mutually prime if the only positive integer that is a divisor of both of them is 1.
+The numbers 8 and 9 are coprime, despite the fact that neither considered individually is a prime number, since 1 is their only common divisor. 
+On the other hand, 6 and 9 are not coprime, because they are both divisible by 3.
+*/
 public class CoPrimeNumber {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
