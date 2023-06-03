@@ -33,5 +33,4 @@ public class CoPrimeNumber {
 
         return (count==0?" are CoPrime Numbers":" are Not CoPrime Numbers");
     }
-
 }
