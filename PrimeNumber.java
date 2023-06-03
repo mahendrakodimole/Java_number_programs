@@ -5,7 +5,7 @@ public class PrimeNumber {
      However, 4 is composite because it is a product (2 × 2) in which both numbers are smaller than 4. */
 
      public static void main(String []args){
-        int input=5;
+        int input=2;
         String result=isPrimeNumber(input);
         System.out.println(result);
         
