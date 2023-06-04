@@ -1,7 +1,7 @@
 class Armstrong{
     /*
 Armstrong number is any number following the given rule –
-abcd… = an + bn + cn + dn + …
+abcd… = a^n + b^n + c^n + d^n + …
 Where n is the order(length/digits in number)
 example : 153
           1634
